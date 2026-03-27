@@ -7,9 +7,8 @@ public class Apple extends Food implements Discountable {
     protected String colour; // цвет
 
     public Apple(int amount, double price, String colour) {
-        super(amount, price);
+        super(amount, price, true);
         this.colour = colour;
-        this.isVegetarian = true;
     }
     public String getColour(){
         return  colour;
